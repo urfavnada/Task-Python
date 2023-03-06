@@ -1,0 +1,96 @@
+# Task.1
+   # write a fumction to find the maximum of 3 nums :
+      def FMax(x,y,z) :
+        if x > y and x > z:
+            print("Maximum number is X = ",x)
+        elif y > x and y > z :
+            print("Maximum number is Y = ",y)
+        elif z > x and z > y :
+            print("Maximum number is Z = ",z)
+        else : 
+            print("They are equal")
+      # a test 
+      FMax(6,7,5)
+
+# Task.2
+    # write a function to sum all the nums in a list :
+       def summation(myList) :
+            sum = 0 
+            for x in myList :
+                sum = sum + x
+            return sum
+        list1 = [1,2,3]
+        print(summation(list1))
+       
+# Task.3
+    # write a function to multiply all the nums in a list: 
+        def multiplication(mylist):
+             result = 1
+             for x in mylist :
+                 result = result * x
+             return multiplication
+         list1 = [1,2,3]
+         print(multiplication(list1))
+         
+# Task.4 
+    # write a program to revese a string " 123abcd"
+        def reversion(mystring) :
+            mystr = ""
+            for x in mystring :
+                mystr = x + mystr
+            return mystr
+        TheString = "123abcd"
+        print(reversion(TheString))
+             
+
+# Task.5
+    # برنامج يحسب المضروب
+        def factorial(x):
+            if x == 0 :
+                return 1
+            elif x == 1 :
+                return 1
+            elif x > 1 :
+                return (x * factorial(x-1))
+        print(factorial(4))
+        
+# Task.6
+    # write a program to print the even from a given list L
+         def findeven(alist) :
+            Even = []
+            for x in alist :
+                if x % 2 == 0 :
+                    Even.append(x)
+            return Even
+        mylist = [1,2,3,4,5]
+        print ("The even number in this list are :",findeven(mylist))
+        
+# Task.7 
+    # write a function to take 1 argu. and multiply this with an unknown given num :
+        def multiplication(X) :
+            result = X * n
+            return result
+        n = int(input())
+        print(multiplication("N"))
+        
+        
+# Task.8
+    # write a program to sort a list unsing lambda :
+          models = [
+          {
+              "make" : "Nokia",
+              "model" :216,
+              "color" : "Black"
+          },
+          {
+              "make" : "Mi Max",
+              "model" :2,
+              "color" : "Gold"
+          },
+          {
+              "make" : "Samsung",
+              "model" :7,
+              "color" : "Blue"
+          }
+      ]
+      print(sorted(models, key=lambda i : (i["make"], i["model"], i["color"])))
